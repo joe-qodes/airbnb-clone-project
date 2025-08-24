@@ -122,5 +122,31 @@ Each entity has essential fields to support the core functionality of the applic
 - A **Review** is written by a **User** (guest) for a specific **Property** after a booking.  
 
 
+## Feature Breakdown
+
+The Airbnb Clone Project includes several core features that replicate the functionality of a real-world booking platform. Each feature plays a vital role in delivering a seamless user experience while supporting business requirements.
+
+- **User Management**  
+  Enables users to register, log in, and manage their profiles securely. It also distinguishes between hosts, who list properties, and guests, who make bookings.  
+
+- **Property Management**  
+  Allows hosts to create, update, and manage property listings with details such as location, price, and availability. This ensures guests have accurate information when browsing for accommodations.  
+
+- **Booking System**  
+  Facilitates guests in reserving properties by selecting dates and confirming availability. It ensures accurate tracking of start and end dates to avoid double bookings.  
+
+- **Review System**  
+  Provides guests the ability to leave ratings and feedback for properties they have stayed in. This builds trust in the platform and helps future guests make informed decisions.  
+
+- **Payment Integration**  
+  Handles secure transactions linked to bookings, including tracking payment status (completed, pending, or failed). This ensures financial accountability between guests and hosts.  
+
+- **Security & Authentication**  
+  Implements robust authentication, authorization, and data protection measures. This feature safeguards sensitive information like passwords, payments, and booking details.  
+
+- **CI/CD Pipeline Integration**  
+  Automates deployment and testing processes using tools like GitHub Actions and Docker. This improves development efficiency and ensures stable releases.  
+
+
 
 🚀 This repository will evolve as the project progresses, with updates on tasks, features, and documentation.
