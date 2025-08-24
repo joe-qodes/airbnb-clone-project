@@ -148,5 +148,28 @@ The Airbnb Clone Project includes several core features that replicate the funct
   Automates deployment and testing processes using tools like GitHub Actions and Docker. This improves development efficiency and ensures stable releases.  
 
 
+## API Security
+
+Security is a critical aspect of the Airbnb Clone Project to protect sensitive data, ensure trust, and maintain the integrity of the platform. The following measures will be implemented:
+
+- **Authentication**  
+  Ensures that only verified users can access the platform by requiring secure login credentials. This protects against unauthorized access to accounts and personal information.
+
+- **Authorization**  
+  Controls what resources users can access based on their role (e.g., guest, host, or admin). This prevents unauthorized operations, such as a guest trying to manage another host’s property.
+
+- **Data Encryption**  
+  Sensitive information such as passwords and payment details will be encrypted in storage and during transmission. This ensures that even if data is intercepted, it cannot be misused.
+
+- **Rate Limiting**  
+  Restricts the number of API requests a user can make within a certain time frame. This protects the system against abuse, brute force attacks, and denial-of-service (DoS) attempts.
+
+- **Input Validation**  
+  All user-provided data will be validated and sanitized to prevent SQL injection, cross-site scripting (XSS), and other injection-based attacks.
+
+- **Secure Payments**  
+  Payment transactions will be handled with additional layers of security, including tokenization and compliance with industry standards (e.g., PCI DSS). This ensures financial data remains protected.
+
+
 
 🚀 This repository will evolve as the project progresses, with updates on tasks, features, and documentation.
