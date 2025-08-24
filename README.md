@@ -74,6 +74,53 @@ Each technology plays a unique role in the system:
 - **DevOps Engineer:**  
   Sets up and manages CI/CD pipelines using tools like GitHub Actions. Automates deployments, containerizes the application with Docker, and ensures reliable performance of the project across development and production environments.
 
+## Database Design
+
+The Airbnb Clone Project database is structured around key entities that manage users, properties, bookings, reviews, and payments.  
+Each entity has essential fields to support the core functionality of the application.
+
+### Entities and Fields
+
+- **Users**
+  - `id`: Unique identifier for each user  
+  - `name`: Full name of the user  
+  - `email`: User’s email address (used for login)  
+  - `role`: Identifies if the user is a host or guest  
+
+- **Properties**
+  - `id`: Unique identifier for each property  
+  - `title`: Short description or name of the property  
+  - `location`: Address or city where the property is located  
+  - `price_per_night`: Cost of booking per night  
+  - `host_id`: References the user who owns the property  
+
+- **Bookings**
+  - `id`: Unique identifier for each booking  
+  - `user_id`: References the guest making the booking  
+  - `property_id`: References the property being booked  
+  - `start_date`: Booking start date  
+  - `end_date`: Booking end date  
+
+- **Reviews**
+  - `id`: Unique identifier for each review  
+  - `user_id`: References the guest who wrote the review  
+  - `property_id`: References the property being reviewed  
+  - `rating`: Numeric score given to the property  
+  - `comment`: Feedback from the guest  
+
+- **Payments**
+  - `id`: Unique identifier for each payment  
+  - `booking_id`: References the booking being paid for  
+  - `amount`: Payment amount  
+  - `status`: Payment status (completed, pending, failed)  
+
+### Relationships
+- A **User** can be both a **Host** (owning multiple properties) and a **Guest** (making multiple bookings).  
+- A **Property** belongs to a single **User** (host), but can have many **Bookings** and **Reviews**.  
+- A **Booking** is made by a **User** (guest) for a specific **Property**.  
+- A **Payment** is linked to one **Booking**.  
+- A **Review** is written by a **User** (guest) for a specific **Property** after a booking.  
+
 
 
 🚀 This repository will evolve as the project progresses, with updates on tasks, features, and documentation.
