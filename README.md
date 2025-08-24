@@ -20,6 +20,31 @@ This project also emphasizes **collaborative workflows**, **CI/CD integration**,
 - **CI/CD:** GitHub Actions (or similar tools)  
 - **Version Control:** Git & GitHub  
 
+## Technology Stack 
+
+The Airbnb Clone Project integrates several modern technologies to build a scalable and secure booking platform.  
+Each technology plays a unique role in the system:
+
+- **Django:**  
+  A Python-based web framework used to build the backend of the application. Provides tools for authentication, request handling, API development, and integration with databases.
+
+- **MySQL (or PostgreSQL):**  
+  A relational database management system used to store structured data such as user accounts, property listings, bookings, and transaction records. Ensures data consistency and supports complex queries.
+
+- **GraphQL:**  
+  A query language for APIs that allows clients to request exactly the data they need. Used to efficiently fetch booking and property data, reducing over-fetching compared to traditional REST APIs.
+
+- **Docker:**  
+  A containerization tool that packages the application and its dependencies into portable containers. Ensures consistency across development, testing, and production environments.
+
+- **GitHub & Git:**  
+  Used for version control and collaboration. Manages project source code, tracks changes, and enables team workflows via branches and pull requests.
+
+- **GitHub Actions (CI/CD):**  
+  Automates testing, building, and deployment pipelines. Ensures code changes are continuously integrated, tested, and deployed with minimal errors.
+
+
+
 ## Team Roles
 
 - **Business Analyst (BA):**  
